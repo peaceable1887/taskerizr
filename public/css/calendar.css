@@ -1,0 +1,83 @@
+/* Month header */
+main header {
+  padding : 20px;
+}
+
+/* Month list */
+main header ul {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+main header h2 {
+  min-width: 40vh;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+header .prev, header .next {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.calendarView {
+  margin: 15px 20px 20px 20px;
+  background: #e7ebec;
+  box-shadow: 5px 3px 10px silver;
+}
+  
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  background-color: var(--sidebar-background-color);
+  color: var(--sidebar-text-color);
+  padding: 12px;
+}
+
+.weekDays li {
+  justify-self: stretch;
+  font-size: large;
+}
+
+.dayNumbers {
+  display: grid;
+  grid-template-columns: repeat(7, auto);
+  grid-gap: 12px;
+  text-align: center;
+  padding: 12px;
+}
+  
+.dayNumbers li {
+  justify-self: stretch;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.day {
+  color: black;
+}
+
+.prev-days, .next-days {
+  color: #aaaaaa
+}
+
+.day:hover, .active {
+  cursor: pointer;
+  background: var(--button-background);
+  color: white !important;
+}
+
+#calendarPlaceholder {
+  font-size: 20px;
+  color: var(--sidebar-text-color);
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

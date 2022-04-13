@@ -1,0 +1,51 @@
+.dark-theme {
+  /* Dark mode */
+  --global-background-color: #242b35;
+  --overlay-background-color: #242b35;
+  --global-text-color: #000000;
+  --overlay-text-color: #fff;
+  --sidebar-background-color: #34495e;
+  --sidebar-text-color: #80929e;
+  --sidebar-text-highlight-color: #f39a00;
+  --sidebar-item-selected-color: #253745;
+  --mainarea-background-color: #eeeeee;
+  --mainarea-text-color: #34495e;
+  --button-color: #ffffff;
+  --button-background: #496b8a;
+  --button-hover: #f39a00;
+  --button-switch-mode: #f39a00;
+  --projectpane-background-color: #708090;
+  --clock-text-color: #fff;
+  --border-color: #f39a00;
+  --border-second-color: #253745;
+  --table-text-color: #34495e;
+  --table-box-shadow: #bcbcbc;
+  --snackbar-color: #fff;
+
+  --icon-color-filter: invert(60%) sepia(11%) saturate(514%) hue-rotate(161deg)
+    brightness(92%) contrast(88%);
+  --icon-color-hover-filter: invert(84%) sepia(8%) saturate(1176%)
+    hue-rotate(180deg) brightness(92%) contrast(89%);
+}
+
+.light-theme {
+  --global-background-color: #ffffff;
+  --overlay-background-color: #ffffff;
+  --global-text-color: #000000;
+  --sidebar-background-color: #ffffff;
+  --sidebar-text-color: #000000;
+  --sidebar-text-highlight-color: #ffffff;
+  --sidebar-item-selected-color: #34495e;
+  --mainarea-background-color: #eeeeee;
+  --mainarea-text-color: #34495e;
+  --button-color: #ffffff;
+  --button-background: #5d5c5c;
+  --button-hover: #253745;
+  --button-switch-mode: #f39a00;
+  --projectpane-background-color: #34495e;
+  --clock-text-color: #000000;
+  --border-color: #f39a00;
+  --border-second-color: #5d5c5c;
+  --table-box-shadow: #bcbcbc;
+  --snackbar-color: #fff;
+}

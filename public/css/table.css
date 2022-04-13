@@ -1,0 +1,46 @@
+table {
+    border: none;
+    border-spacing: unset;
+    border-bottom: 3px solid rgb(128, 7, 0);
+    margin: 20px;
+    box-shadow: 13px -10px 5px -1px var(--table-box-shadow);
+}
+
+thead {
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: rgb(128, 7, 0);
+    text-align: left;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody td {
+    padding: 10px;
+    text-align: left;
+}
+
+tbody td:nth-child(2)::first-letter {
+    font-weight: bold;
+}
+
+tbody td:not(:last-child) {
+    border-right: 1px solid rgb(128, 7, 0);
+}
+
+tbody tr:nth-child(odd) {
+    background: rgb(238, 238, 238);
+}
+
+tbody tr:nth-child(even) {
+    background: rgb(204, 204, 204);
+}
+
+tbody tr:hover {
+    background: rgb(44, 44, 44);
+    color: white;
+}

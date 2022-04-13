@@ -1,0 +1,98 @@
+.overlay-showFullTask {
+  color: var(--overlay-text-color);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  box-sizing: border-box;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  background: rgba(68, 68, 68, 0.7);
+  z-index: 10;
+}
+
+.overlay-showFullTask span:first-child {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.overlay-showFullTask form {
+  position: relative;
+  width: 600px;
+  background: var(--overlay-background-color);
+  left: calc(50% - 200px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px
+}
+.overlay-showFullTask form legend
+{
+  padding: 0 5px 0 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlay-showFullTask form fieldset {
+  padding: 20px;
+  width: 550px;
+  height: 400px;
+}
+
+.overlay-showFullTask form p:nth-child(-n + 8) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-showFullTask form span:last-child button {
+  padding: 12px 25px;
+  cursor: pointer;
+}
+.overlay-showFullTask form .buttons:last-child button:first-child {
+  font-size: 18px;
+  background: var(--sidebar-item-selected-color);
+  color: white;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.overlay-showFullTask form .buttons:last-child button:last-child {
+  font-size: 18px;
+  background: var(--sidebar-item-selected-color);
+  color: white;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+}
+.overlay-showFullTaskk .buttons
+{
+  text-align: center;
+}
+.overlay-showFullTask p
+{
+  font-size: 18px;
+  margin-right: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.overlay-showFullTask .description
+{
+    font-size: 18px;
+    text-decoration: underline;
+}
+.overlay-showFullTask #add-new-task-close:hover{
+    color: #f39a00;
+}
+#closeFullTask
+{
+    position:absolute;
+
+        bottom:20px;
+margin-left: 200px;
+
+
+
+}

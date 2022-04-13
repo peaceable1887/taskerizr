@@ -1,0 +1,142 @@
+/*** Project pane ***/
+.projects {
+  flex: 1;
+  background-color: var(--projectpane-background-color);
+  width: 100%;
+}
+
+.project-link {
+  display: flex;
+  font-size: 20px;
+  padding: 10px;
+  color: var(--global-background-color);
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.project-link > span {
+  color: var(--clock-text-color);
+  pointer-events: none;
+}
+
+.project-process-indicator {
+  margin-left: 20px;
+  font-size: small;
+}
+
+.project-link:hover,
+.project-link-active {
+  color: var(--sidebar-item-selected-color);
+  background-color: var(--sidebar-text-highlight-color);
+  cursor: pointer;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+#new-project-btn {
+  padding: 10px 14px;
+  font-size: 20px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  width: 100%;
+  border: unset;
+  white-space: nowrap;
+  color: var(--button-color);
+  background-color: var(--button-background);
+}
+
+#new-project-btn:hover {
+  cursor: pointer;
+  background: var(--button-hover);
+}
+
+#new-project-btn img {
+  margin-right: 10px;
+}
+#overlay-task-save-button:hover
+{
+    color:var(--button-color);
+    background: var(--button-hover);
+}
+#overlay-task-create-button:hover
+{
+    color:var(--button-color);
+    background: var(--button-hover);
+}
+
+/*** Tasks ***/
+
+.icon {
+  position: relative;
+  margin-right: 8px;
+  top: 4px;
+  filter: invert(66%) sepia(31%) saturate(2561%) hue-rotate(0deg) brightness(95%) contrast(105%);
+}
+
+.task-item button img {
+  padding-right: 5px;
+  filter: invert(39%) sepia(16%) saturate(1169%) hue-rotate(167deg) brightness(93%) contrast(83%);
+}
+
+.task-item button img:hover {
+  filter: invert(66%) sepia(31%) saturate(2561%) hue-rotate(0deg) brightness(95%) contrast(105%);
+}
+
+/*** Task Table ***/
+
+.task-table {
+  border: none;
+  width: 100%;
+  border-spacing: 0px 5px;
+
+}
+
+.task-table thead {
+
+  background: #FBFBF9;
+  text-align: left;
+}
+
+.task-table thead th {
+  color: var(--table-text-color);
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.task-table tbody td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid lightgray;
+}
+
+.task-item:hover {
+  cursor: pointer;
+  background-color: white;
+}
+
+.task-item button:hover {
+  cursor: pointer;
+}
+
+.task-item-done {
+  text-decoration: line-through;
+}
+
+.hiddenCell{
+  display: none;
+}
+
+/*
+.task-item {
+  text-decoration: line-through;
+}
+*/

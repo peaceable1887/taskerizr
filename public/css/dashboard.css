@@ -1,0 +1,67 @@
+/*** Welcome ***/
+.heading1 {
+  font-size: 35px;
+  font-weight: 600;
+  margin: -15px 0px 15px 0px;
+}
+
+.welcomeQuoteP {
+  display: flex;
+  align-items: baseline;
+}
+
+#nxtQuote {
+  border: none;
+  color: var(--sidebar-text-color);
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration: underline;
+  margin-left: 15px;
+}
+
+#nxtQuote:hover {
+  color: var(--mainarea-text-color);
+}
+
+/*** Quotes ***/
+#quotes {
+  font-size: 18px;
+}
+
+#author {
+  font-size: 13px;
+  color: var(--sidebar-text-color);
+}
+
+/*** Heute Fällig ***/
+h2 {
+  margin-bottom: 15px;
+}
+
+/*** Charts ***/
+#charts {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.square {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+}
+
+.greenSquare {
+  background: #1C8D73;
+}
+
+.redSquare {
+  background: #B4161B;
+}
+
+.yellowSquare {
+  background: #E8BD0D;
+}
+
+.orangeSquare {
+  background: #FF6666;
+}

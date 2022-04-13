@@ -1,0 +1,113 @@
+<!doctype html>
+
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Aufgabenplaner Gr-15</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/dark-theme.css">
+    <link rel="stylesheet" href="css/overlay.css">
+</head>
+<body>
+<header>
+    <nav>
+        <!--Logo, Link zur Startseite-->
+        <a href="index.html">
+            <img id="logo" src="images/iconmonstr-delivery-10-48.png" alt="">
+        </a>
+        <!--Akutelle Zeit (Uhr)-->
+        <div>
+            <time datetime=""></time>
+        </div>
+        <div>
+            <!-- Links zu Einstellungen(Bisher nur Index) und Tutorial-->
+            <a href="">Einstellungen</a> 
+            <a href="">Tutorial</a>
+        </div>
+    </nav>
+</header>
+<main>
+    <!-- Navigation der Projekte -->
+    <nav id="sidebar">
+        <!-- Projekt hinzufügen-->
+        <button id="button-add-new-project">
+            <img src="images/iconmonstr-plus-5-24.png" alt="plus">
+            <p>Neues Projekt</p>
+        </button>
+        <!-- Projektliste -->
+        <ul id="project-list">
+            <li>
+                <a href = "">Projekt</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Navigation der Aufgaben-->
+    <div id="main-content">
+        <nav>
+            <p>Projekt 1</p>
+            <!-- Aufgabe hinzufügen -->
+            <button id="button-add-new-task">Neue Aufgabe</button>
+            <!-- Suchfeld für Aufgaben-->
+            <input type="search" name="search" id="input-search-task" placeholder="Suche hier ...">
+        </nav>
+        <!-- Aufgabenauflistung -->
+        <ul id="task-list">
+
+        </ul>
+
+    </div>
+</main>
+
+<!-- Overlay -->
+<div class="overlay">
+    <span>X</span>
+    <form action="#">
+        <fieldset>
+            <legend>Aufgabe erstellen</legend>
+            <p>
+                <label for="title">Titel: </label>
+                <input type="text" id="title">
+            </p>
+            <p>
+                <label for="start-date">Beginnt am: </label>
+                <input type="date" id="start-date">
+            </p>
+            <p>
+                <label for="due-to">Fällig am: </label>
+                <input type="date" id="due-to">
+            </p>
+            <p>
+                <input type="checkbox" id="check-remember">
+                <label for="remember"> Erinnerung</label>
+                <input type="datetime-local" id="date-remember">
+            </p>
+            <p>
+                <label for="priority">Priorität</label>
+                <select id="priority">
+                    <option value="low">niedrig</option>
+                    <option value="medium">mittel</option>
+                    <option value="high">hoch</option>
+                </select>
+            </p>
+            <label for="description">
+                Beschreibung<br>
+                <textarea rows="7"></textarea>
+            </label>
+        </fieldset>
+        <span>
+            <button type="submit">Erstellen</button> <button>Abbrechen</button>
+        </span>
+    </form>
+</div>
+
+
+<footer>
+    <p>Copyright @ Gruppe-15</p>
+</footer>
+<script type="text/javascript" src="js/clock.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/createTask.js"></script>
+<script type="text/javascript" src="js/overlay.js"></script>
+</body>
+</html>

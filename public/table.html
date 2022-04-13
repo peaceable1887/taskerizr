@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Uebungstabelle Gr-15</title>
+    <link rel="icon" href="images/favicon.png" sizes="16x16 32x32" type="image/png">
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/search.css">
+  </head>
+  <!-- BODY -->
+  <body class="dark-theme">
+    <header>
+      <div>
+        <a href="index.html"><img src="images/taskerizr-logo.png" alt="" style="width:230px;height: 100px"></a>
+      </div>
+      <div id="time-area">
+        <time datetime=""></time>
+        <span id="icon"><img src=""></span>
+      </div>
+      <form autocomplete="off">
+        <div class="autocomplete">
+          <input id="myInput" type="text" placeholder="Aufgabe suchen...">
+        </div>
+      </form>
+    </header>
+    <div id="mid">
+      <!-- Menü -->
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="index.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-chart-3-32.png" alt="" />
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href=project.html id="project-btn" class="sidebar-nav-link">
+              <img src="images/iconmonstr-task-1-32.png" alt="" />
+              <p>Projekte</p>
+            </a>
+          </li>
+          <li>
+            <a href="calendar.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-calendar-5-32.png" alt="" />
+              <p>Kalender</p>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-gear-11-32.png" alt="" />
+              <p>Einstellungen</p>
+            </a>
+          </li>
+          <li>
+            <a href="table.html" class="sidebar-nav-link sidebar-nav-link-active">
+              <img src="images/iconmonstr-school-15-32.png" alt="" />
+              <p>Tabelle</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menü -->
+      <main>
+        <header>
+          <h2>Tabelle</h2>
+        </header>
+        <table>
+
+          <!--Table Head -->
+          <thead>
+            <tr>
+              <th>Modul</th>
+              <th>Wochentag</th>
+              <th>Semester</th>
+              <th>bestanden</th>
+              <th>durchgefallen</th>
+            </tr>
+          </thead>
+
+          <!-- Table Body-->
+          <tbody>
+      
+            <tr>
+              <td>Webdesign</td>
+              <td>Montag</td>
+              <td>1</td>
+              <td></td>
+              <td>x</td>
+            </tr>
+      
+            <tr>
+              <td>DB-Desing</td>
+              <td>Dienstag</td>
+              <td>2</td>
+              <td>x</td>
+              <td></td>
+            </tr>
+      
+            <tr>
+              <td>Scriptdesign</td>
+              <td>Mittwoch</td>
+              <td>3</td>
+              <td>x</td>
+              <td></td>
+            </tr>
+      
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td></td>
+              <td></td>
+            </tr>
+      
+            <tr>
+              <td>...</td>
+              <td>...</td>
+              <td>...</td>
+              <td></td>
+              <td></td>
+            </tr>
+      
+          </tbody>
+        </table>
+
+        </ul>
+      </main>
+    </div>
+    
+    <footer>
+      <p>Copyright @ Gruppe-15 </p>
+    </footer>
+    <script type="text/javascript" src="js/settingsController.js" defer></script>
+    <script type="text/javascript" src="js/clock.js" defer></script>
+    <script type="text/javascript" src="js/snackbar.js" defer></script>
+    <script type="text/javascript" src="js/database.js" defer></script>
+    <script type="text/javascript" src="js/search.js" defer></script>
+  </body>
+  <!-- BODY -->
+</html>

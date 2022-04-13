@@ -1,0 +1,114 @@
+.overlay-task {
+  width: 100%;
+  height: 100vh;
+  color: var(--overlay-text-color);
+  position: absolute;
+  box-sizing: border-box;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  background: rgba(68, 68, 68, 0.7);
+  z-index: 10;
+}
+
+.overlay-task form {
+  position: relative;
+  width: 400px;
+  min-height: 400px;
+  background: var(--overlay-background-color);
+  left: calc(50% - 200px);
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 15px;
+}
+.overlay-task form fieldset legend
+{
+  padding: 0 5px 0 5px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.overlay-task form fieldset {
+  margin: 15px;
+  padding: 10px;
+}
+
+.overlay-task form p:nth-child(-n + 8) {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overlay-task textarea {
+  width: 100%;
+}
+
+.overlay-task form button {
+  font-size: 18px;
+  background: var(--button-background);
+  color: white;
+  margin: 0 10px 10px 10px;
+  border-radius: 5px;
+  padding: 12px 25px;
+}
+
+.overlay-task .buttons {
+  text-align: center;
+}
+
+.overlay-task p {
+  font-size: 16px;
+  margin-right: 2px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.overlay-task #title {
+  width: 200px;
+}
+
+.overlay-task #start-date {
+  width: 200px;
+}
+
+.overlay-task #due-to {
+  width: 200px;
+}
+
+.overlay-task #date-remember {
+  width: 200px;
+}
+
+.overlay-task #priority {
+  width: 204px;
+}
+
+.overlay-task .description {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.overlay-task #descriptionField {
+  margin-top: 10px;
+  width: 350px;
+  min-width: 350px;
+  max-width:350px;
+  min-height: 150px;
+  display: inline-block;
+}
+
+.overlay-task button:hover {
+  cursor: pointer;
+}
+
+#overlay-task-taskID {
+  display: none;
+}
+
+
+
+
+

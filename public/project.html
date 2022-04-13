@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+  <title>Projekte Gr-15</title>
+  <link rel="icon" href="images/favicon.png" sizes="16px16 32px32" type="image/png">
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/overlay_task.css" />
+  <link rel="stylesheet" href="css/overlay_newProject.css" />
+  <link rel="stylesheet" href="css/overlay_showFullProject.css" />
+  <link rel="stylesheet" href="css/snackbar.css" />
+  <link rel="stylesheet" href="css/tasks.css">
+  <link rel="stylesheet" href="css/search.css">
+
+</head>
+<!-- BODY -->
+<body class="dark-theme">
+<header>
+  <div>
+    <a href="index.html"><img src="images/taskerizr-logo.png" alt="" style="width:230px;height: 100px"/></a>
+  </div>
+  <div id="time-area">
+    <time datetime=""></time>
+    <span id="icon"><img src=""></span>
+  </div>
+  <form autocomplete="off">
+    <div class="autocomplete">
+      <input id="myInput" type="text" placeholder="Aufgabe suchen...">
+    </div>
+  </form>
+</header>
+<div id="mid">
+  <!-- Menü -->
+  <nav class="sidebar">
+    <ul>
+      <li>
+        <a href="index.html" class="sidebar-nav-link">
+          <img src="images/iconmonstr-chart-3-32.png" alt="" />
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li>
+        <a href="project.html?#" class="sidebar-nav-link sidebar-nav-link-active">
+          <img src="images/iconmonstr-task-1-32.png" alt="" />
+          <p>Projekte</p>
+        </a>
+      </li>
+      <li>
+        <a href="calendar.html" class="sidebar-nav-link">
+          <img src="images/iconmonstr-calendar-5-32.png" alt="" />
+          <p>Kalender</p>
+        </a>
+      </li>
+      <li>
+        <a href="settings.html" class="sidebar-nav-link">
+          <img src="images/iconmonstr-gear-11-32.png" alt="" />
+          <p>Einstellungen</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="table.html" class="sidebar-nav-link">
+          <img src="images/iconmonstr-school-15-32.png" alt="" />
+          <p>Tabelle</p>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="projects">
+    <ul id="project-list">
+      <template>
+        <li>
+          <div class="project-link">
+            <span></span>
+          </div>
+        </li>
+      </template>
+      <li>
+        <button id="new-project-btn">
+          <img src="images/iconmonstr-plus-5-24_grey.png" alt="">
+          <span>Neues Projekt</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- Button: Neue Aufagbe hinzufügen -->
+    <div class="main-header">
+      <div class="projectEdit">
+        <h2 id="project-heading">Projekt</h2>
+        <button id="deletePrjctBtn">Löschen</button>
+      </div>
+      <button class="btn-themes" id="new-task-btn">Neue Aufgabe</button>
+    </div>
+
+    <!-- Aufgaben werden hier erstellt -->
+    <div id="task-table-container">
+      <table class="task-table">
+        <thead>
+          <tr>
+            <th class="hiddenCell">
+              ID</th>
+            <th><img class='icon' src='images/iconmonstr-tag-2-240.png' width='20' height='20'>Titel</th>
+            <th><img class='icon'; src='images/iconmonstr-calendar-4-240.png' width='20' height='20'>Startdatum</th>
+            <th><img class='icon'; src='images/iconmonstr-calendar-6-240.png' width='20' height='20'>Enddatum</th>
+            <th><img class='icon'; src='images/iconmonstr-warning-6-240.png' width='20' height='20'>Priorität</th>
+            <th><img class='icon'; src='images/iconmonstr-process-1-240.png' width='20' height='20'>Aktionen</th>
+          </tr>
+          <template id="task-item-template">
+            <tr class="task-item">
+              <td id="task-id" class="hiddenCell"></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>
+                <button><img class='editIcon' src='images/iconmonstr-pencil-14-240.png' width='20' height='20'></button>
+                <button><img class='trashIcon'; src='images/iconmonstr-trash-can-1-240.png' width='20' height='20'></button>
+                <button><img class='checkIcon' src='images/iconmonstr-check-mark-1-240.png' width='20' height='20'></button>
+              </td>
+            </tr>  
+          </template>
+        </thead>
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+    <!-- Snackbar -->
+    <div id="snackbar">
+      <img src="" alt="" />
+      <p></p>
+    </div>
+  </main>
+</div>
+<!-- Overlay Projekt hinzufügen -->
+<div class="overlay-project">
+  <form action="#" autocomplete="off">
+    <fieldset>
+      <legend>Projekt erstellen</legend>
+      <p id="title-validation-message"></p>
+      <label class="title"><img class='icon' src='images/iconmonstr-tag-2-240.png' width='20' height='20'><span style="padding: 4px;">Titel: </label>
+      <input type="text" id="title-project" value="" minlength="4" maxlength="80"/>
+    </fieldset>
+    <div class="buttons">
+      <button type="button" id="overlay-project-submit-btn">
+        Erstellen
+      </button>
+      <button type="button" class="overlay-close-button">Abbrechen</button>
+    </div>
+  </form>
+</div>
+
+<!-- Overlay Aufgabe hinzufügen -->
+<div class="overlay-task">
+  <span>X</span>
+  <form action="#">
+    <fieldset>
+      <legend>Aufgabe erstellen</legend>
+      <!-- <p id="titel-input"> -->
+      <p id="overlay-task-taskID"></p>
+      <p>
+        <label class="title"><img class='icon' src='images/iconmonstr-tag-2-240.png' width='20' height='20'><span style="padding: 4px;">Titel: </span></label>
+        <input type="text" id="title"/>
+      </p>
+      <p>
+        <label for="start-date"><img class='icon'; src='images/iconmonstr-calendar-4-240.png' width='20' height='20'><span style="padding: 4px;">Beginnt am: </span></label>
+        <input type="date" id="start-date" />
+      </p>
+      <p>
+        <label for="due-to"><img class='icon'; src='images/iconmonstr-calendar-6-240.png' width='20' height='20'><span style="padding: 4px;">Fällig am: </span></label>
+        <input type="date" id="due-to"/>
+      </p>
+      <p>
+        <label for="date-remember"><img class='icon'; src='images/iconmonstr-calendar-9-240.png' width='20' height='20'><span style="padding: 4px;">Erinnerung: </span></label>
+        <input type="datetime-local" id="date-remember"/>
+      </p>
+      <p>
+        <label for="priority"><img class='icon'; src='images/iconmonstr-warning-6-240.png' width='20' height='20'><span style="padding: 4px;">Priorität: </span></label>
+        <select id="priority">
+          <option id="low" value="NIEDRIG">Niedrig</option>
+          <option id="medium" value="MITTEL">Mittel</option>
+          <option id="high" value="HOCH">Hoch</option>
+        </select>
+      </p>
+      <label class="description">Beschreibung</label>
+      <textarea id="descriptionField" rows="7"></textarea>
+    </fieldset>
+    <span>
+      <div class="buttons">
+        <button id="overlay-task-save-button">Speichern</button>
+        <button type="submit" id="overlay-task-create-button">
+          Erstellen
+        </button>
+        <button class="overlay-close-button">Abbrechen</button>
+      </div>
+    </span>
+  </form>
+</div>
+<!-- Overlay komplette Aufgabe anzeigen -->
+<div class="overlay-showFullTask">
+  <form action="#">
+    <fieldset>
+      <legend>Hausarbeit</legend>
+      <!-- <p id="titel-input"> -->
+      <p>
+        <label class="title"><img class='icon' src='images/iconmonstr-tag-2-240.png' width='20' height='20'><span style="padding: 4px;">Titel: </span></label>
+      </p>
+      <p>
+        <label for="start-date"><img class='icon'; src='images/iconmonstr-calendar-4-240.png' width='20' height='20'><span style="padding: 4px;">Beginnt am: </span></label>
+      </p>
+      <p>
+        <label for="due-to"><img class='icon'; src='images/iconmonstr-calendar-6-240.png' width='20' height='20'><span style="padding: 4px;">Fällig am: </span></label>
+      </p>
+      <p>
+        <label for="date-remember"><img class='icon'; src='images/iconmonstr-calendar-9-240.png' width='20' height='20'><span style="padding: 4px;">Erinnerung: </span></label>
+      </p>
+      <p>
+        <label for="priority"><img class='icon'; src='images/iconmonstr-warning-6-240.png' width='20' height='20'><span style="padding: 4px;">Priorität: </span></label>
+      </p>
+      <label class="description">Beschreibung: </label>
+      <span>
+      <div class="buttons">
+        <button class="overlay-close-button" id="closeFullTask">Schließen</button>
+      </div>
+    </span>
+    </fieldset>
+  </form>
+</div>
+<footer>
+  <p>Copyright @ Gruppe-15</p>
+</footer>
+<script type="text/javascript" src="js/database.js" defer></script>
+<script type="text/javascript" src="js/settingsController.js" defer></script>
+<script type="text/javascript" src="js/overlayController.js"></script>
+<script type="text/javascript" src="js/projects.js" defer></script>
+<script type="text/javascript" src="js/tasks.js" defer></script>
+<script src="js/overlay_task.js"></script>
+<script type="text/javascript" src="js/overlay_newProject.js" defer></script>
+<script type="text/javascript" src="js/clock.js" defer></script>
+<script type="text/javascript" src="js/snackbar.js" defer></script>
+<script type="text/javascript" src="js/search.js" defer></script>
+
+
+</body>
+</html>

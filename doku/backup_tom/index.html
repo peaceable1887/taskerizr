@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task Manager</title>
+    <meta name="author" content="Tom Gibson, Marc Fischer, Felix Hansmann, Frederic Karliczek">
+    <meta name="description" content="Taskmanager zum Verwalten von Aufgaben">
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navigationsleiste -->
+        <nav>
+            <p class="logo">LOGO</p>
+            <p id="time"></p>
+            <ul>
+                <!-- Menue -->
+                <li>
+                    <a href="#">Kalender</a>
+                </li>
+                <li>
+                    <a href="#">Einstellungen</a>
+                </li>
+                <li>
+                    <a href="#">Tutorial</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Sidebar, um Projekte anzulegen und zu verwalten -->
+        <div id="sidebar">
+            <!-- Menue für Projekte -->
+            <nav>
+                <button id="button-add-project">Projekt hinzufügen</button>
+                <ul>
+                    <li>
+                        <a href="#">Projekt 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Projekt 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Projekt 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Projekt 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <!-- Projekt Navigation -->
+            <ul class="projektHeader"> 
+                <li>
+                    <h1>Projekt 1</h1>
+                </li>
+                <li>
+                    <button>Aufgabe hinzufügen</button>
+                </li>
+                <li>
+                    <input type="search" placeholder="Suche...">
+                </li>
+            </ul>
+            <!-- Liste mit Aufgaben -->
+            <ul class="taskList">
+                <li>
+                    <p>Aufgabe 1</p>
+                </li>
+                <li>
+                    <p>Aufgabe 2</p>
+                </li>
+                <li>
+                    <p>Aufgabe 3</p>
+                </li>
+            </ul>
+            <!-- Temporärer Button zur Übung 1b c)-->
+            <a class="linkToExercise" href="tabledesign.html">Tabelle Aufgabe 1b c)</a>
+        </div>
+    </main>
+    <footer>
+        <!-- Links wie Impressum oder Datenschutz, Social Media Icons -->
+        <ul>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+            <li>
+                <a href="#">Link</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

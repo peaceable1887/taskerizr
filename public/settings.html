@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Einstellungen Gr-15</title>
+    <link rel="icon" href="images/favicon.png" sizes="16x16 32x32" type="image/png">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/snackbar.css">
+    <link rel="stylesheet" href="css/search.css">
+  </head>
+  <!-- BODY -->
+  <body class="dark-theme">
+    <header>
+      <div>
+        <a href="index.html"><img src="images/taskerizr-logo.png" alt="" style="width:230px;height: 100px"></a>
+      </div>
+      <div id="time-area">
+        <time datetime=""></time>
+        <span id="icon"><img src=""></span>
+      </div>
+      <form autocomplete="off">
+        <div class="autocomplete">
+          <input id="myInput" type="text" placeholder="Aufgabe suchen...">
+        </div>
+      </form>
+    </header>
+    <div id="mid">
+      <!-- Menü -->
+      <nav class="sidebar">
+        <ul>
+          <li>
+            <a href="index.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-chart-3-32.png" alt="" />
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a id="project-btn" href="project.html?#" class="sidebar-nav-link">
+              <img src="images/iconmonstr-task-1-32.png" alt="" />
+              <p>Projekte</p>
+            </a>
+          </li>
+          <li>
+            <a href="calendar.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-calendar-5-32.png" alt="" />
+              <p>Kalender</p>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html" class="sidebar-nav-link sidebar-nav-link-active">
+              <img src="images/iconmonstr-gear-11-32.png" alt="" />
+              <p>Einstellungen</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="table.html" class="sidebar-nav-link">
+              <img src="images/iconmonstr-school-15-32.png" alt="" />
+              <p>Tabelle</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Menü -->
+      <main>
+        <header>
+          <h2>Einstellungen</h2>
+        </header>
+        <section class="color-themes">
+          <button id="dark-mode" class="btn-themes">Dark-Mode</button>
+          <button id="light-mode" class="btn-themes">Light-Mode</button>
+          <!-- <button id="retro-mode" class="btn-themes">Retro Modus</button> -->
+        </section>
+        <button id="save-settings" class="btn-themes"> Einstellungen ändern</button>
+        <div id="snackbar">
+          <img src="" alt="">
+          <p></p>
+        </div>
+      </main>
+
+      <!-- Overlay Bestätigung das gespeichert -->
+      <section id="successful-save" class="showHideOverlay">
+        <p>Daten erfolgreich gespeichert</p>
+      </section>
+    </div>
+    <footer>
+      <p>Copyright @ Gruppe-15 </p>
+    </footer>
+    <script type="text/javascript" src="js/database.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/settingsController.js"></script>
+    <script type="text/javascript" src="js/settings.js"></script>
+    <script type="text/javascript" src="js/snackbar.js"></script>
+    <script type="text/javascript" src="js/search.js" defer></script>
+  </body>
+  <!-- BODY -->
+</html>

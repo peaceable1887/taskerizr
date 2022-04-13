@@ -1,0 +1,22 @@
+{
+  "name": "Pfannkuchen",
+  "instructions": "Zutaten mit einem Schneebesen vermischen, bis sie nicht mehr klumpig sind. Eine Gusseiserne Pfanne vorheizen. Etwas Öl und eine Kelle des Teiges in die Pfanne geben. Wenn die Oberseite stockt, wenden.",
+  "ingredients": [
+    {
+      "name": "Mehl",
+      "amount": "400 g"
+    },
+    {
+      "name": "Milch",
+      "amount": "800 ml"
+    },
+    {
+      "name": "Ei",
+      "amount": "4 Stück"
+    },
+    {
+      "name": "Salz",
+      "amount": "1 Prise"
+    }
+  ]
+}

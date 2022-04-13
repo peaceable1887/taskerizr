@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>HTML-Dokument Tabelle - Praktikum</title>
+
+
+	<style link=>
+		body,
+		html {
+			margin-top: 20px;
+			padding: 0;
+			box-sizing: border-box;
+			color: black;
+			font-family: sans-serif;
+		}
+
+		h1 {
+			margin: 20px;
+		}
+
+		table {
+			border: none;
+			border-spacing: unset;
+			border-bottom: 3px solid rgb(128, 7, 0);
+			margin: 20px;
+			box-shadow: 13px -10px 5px -1px #bcbcbc;
+		}
+
+		thead {
+			border: none;
+			color: white;
+			font-size: 1.1rem;
+			font-weight: bold;
+			background: rgb(128, 7, 0);
+			text-align: left;
+		}
+
+		thead th {
+			padding: 10px;
+		}
+
+		tbody td {
+			padding: 10px;
+			text-align: left;
+		}
+
+		tbody td:nth-child(2)::first-letter {
+			font-weight: bold;
+		}
+
+		tbody td:not(:last-child) {
+			border-right: 1px solid rgb(128, 7, 0);
+		}
+
+		tbody tr:nth-child(odd) {
+			background: rgb(238, 238, 238);
+		}
+
+		tbody tr:nth-child(even) {
+			background: rgb(204, 204, 204);
+		}
+
+		tbody tr:hover {
+			background: rgb(44, 44, 44);
+			color: white;
+		}
+
+		a {
+			border: none;
+			color: white;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			font-size: 16px;
+			margin: 20px;
+			cursor: pointer;
+			background: #333333;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Zurueck zur index datei -->
+	<a href="index.html">Zurück zur Startseite</a> 
+
+	<h1>Tabelle</h1>
+
+	<table>
+
+		<!--Table Head -->
+		<thead>
+			<tr>
+				<th>Modul</th>
+				<th>Wochentag</th>
+				<th>Semester</th>
+				<th>bestanden</th>
+				<th>durchgefallen</th>
+			</tr>
+		</thead>
+
+
+		<!-- Table Body-->
+		<tbody>
+
+			<tr>
+				<td>Webdesign</td>
+				<td>Montag</td>
+				<td>1</td>
+				<td></td>
+				<td>x</td>
+			</tr>
+
+			<tr>
+				<td>DB-Desing</td>
+				<td>Dienstag</td>
+				<td>2</td>
+				<td>x</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>Scriptdesign</td>
+				<td>Mittwoch</td>
+				<td>3</td>
+				<td>x</td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>...</td>
+				<td>...</td>
+				<td>...</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+			<tr>
+				<td>...</td>
+				<td>...</td>
+				<td>...</td>
+				<td></td>
+				<td></td>
+			</tr>
+
+		</tbody>
+
+
+	</table>
+
+
+</body>
+
+</html>
